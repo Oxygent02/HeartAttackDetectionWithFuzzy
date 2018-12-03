@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Heart Attack Detector by using Fuzzy Logic</string>
+    <string name="description">This application is on development that can help people to know do they occured by heart attack or not.</string>
+
+    <string name="result1">Hurray! you are not occurred by heart attack</string>
+</resources>

@@ -1,0 +1,203 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:gravity="center"
+        android:textColor="@color/colorBlack"
+        android:textSize="22sp"/>
+
+    <!--Description-->
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/description"
+        android:textSize="12sp"
+        android:textAlignment="center"/>
+
+    <!--Heart Pressure-->
+        <TextView
+            android:id="@+id/label_heart_pressure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Heart Pressure"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+
+    <!--Systolic-->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxBackgroundColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlack">
+
+            <EditText
+                android:id="@+id/edt_systolic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:hint="Systolic"
+                android:textColorHint="#607D8B"
+                android:inputType="numberDecimal"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+    <!--Diastolic-->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxBackgroundColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlack">
+
+        <EditText
+            android:id="@+id/edt_diastolic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:hint="Diastolic"
+            android:textColorHint="#607D8B"
+            android:inputType="numberDecimal"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <!--Cholesterol-->
+        <TextView
+            android:id="@+id/textview4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="8dp"
+            android:text="Cholestrol"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+
+    <!--HDL-->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxBackgroundColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlack">
+
+            <EditText
+                android:id="@+id/edt_hdl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:hint="HDL"
+                android:textColorHint="#607D8B"
+                android:inputType="numberDecimal"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+    <!--LDL-->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxBackgroundColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlack">
+
+        <EditText
+            android:id="@+id/edt_ldl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:hint="LDL"
+            android:textColorHint="#607D8B"
+            android:inputType="numberDecimal"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+    <!--Trigliceride-->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxBackgroundColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlack">
+
+            <EditText
+                android:id="@+id/edt_trigliceride"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:hint="Trigliceride"
+                android:textColorHint="#607D8B"
+                android:inputType="numberDecimal"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <!--Button-->
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/btn_define"
+            android:src="@drawable/ic_search_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="8dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/transparent"/>
+
+        <!--<Button-->
+            <!--android:id="@+id/btn_define"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:padding="8dp"-->
+            <!--android:text="Define"-->
+            <!--android:textSize="14sp"-->
+            <!--android:textStyle="bold"-->
+            <!--android:textColor="#000000"-->
+            <!--android:layout_gravity="center_horizontal"/>-->
+
+        <!--RESULT-->
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/border">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Result: "
+                android:textSize="18sp"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/tv_result"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="16sp"
+                android:textColor="#000000"/>
+
+        </LinearLayout>
+
+
+
+</LinearLayout>
