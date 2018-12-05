@@ -3,8 +3,12 @@ package com.oxygent.heartattackdetectionwithfuzzy
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Editable
+import android.view.KeyEvent
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
+import android.view.KeyEvent.KEYCODE_BACK
+
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -13,6 +17,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         initializeValid()
+    }
+
+    override fun onBackPressed() {
+//         super.onBackPressed(); commented this line in order to disable back press
+        //Write your code here
+        Toast.makeText(applicationContext, "Back press disabled!", Toast.LENGTH_SHORT).show()
     }
 
     private fun initializeValid() {
